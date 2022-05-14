@@ -106,6 +106,10 @@ router.delete(
   deleteuser_game_history_api
 );
 
+router.get("/view/usergames", getuser_game_views);
+router.post("/view/createusergames", createuser_game_fromviews);
+router.post("/view/createusergame", createuser_game_views);
+
 // //User Game Views
 // router.get("/views/get-user-games", getuser_game_views);
 // router.get("/views/get-user-game/:id", getuser_gamebyid_views);
@@ -172,6 +176,10 @@ router.delete(
 
 router.post("/api/register", register);
 router.post("/api/login", login);
+
+router.get("/", (req, res) => {
+  res.redirect("/view/usergames");
+});
 
 //User Game Views
 module.exports = router;
