@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "db_game",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "db_game",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "url": "postgres://iqysxhukwtrcrb:f83024ee184a3f35c1d0f67bc486b1169f250409e3b62066d82be8eb5f9a7158@ec2-52-73-155-171.compute-1.amazonaws.com:5432/dcp80g1m7vg4gr",
+    "username": "iqysxhukwtrcrb",
+    "password": "f83024ee184a3f35c1d0f67bc486b1169f250409e3b62066d82be8eb5f9a7158",
+    "database": "dcp80g1m7vg4gr",
+    "host": "ec2-52-73-155-171.compute-1.amazonaws.com",
+    "port": 5432,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
